@@ -83,7 +83,8 @@ function handleSubmit(event) {
 function likeQuote(event) {
   const quoteId = parseInt(event.target.dataset.id);
   let newLike = {
-    quoteId,
+    quoteId: quoteId,
+    // quoteId
   };
 
   fetch("http://localhost:3000/likes", {
